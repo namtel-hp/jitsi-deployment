@@ -13,7 +13,7 @@ spec:
     spec:
       # avoid that pods of different shards share zone
       nodeSelector:
-        topology.kubernetes.io/zone: ZONE_1
+        topology.kubernetes.io/zone: SGP1
     metadata:
       labels:
         shard: "0"
