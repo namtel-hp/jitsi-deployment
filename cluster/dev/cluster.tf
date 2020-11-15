@@ -17,7 +17,7 @@ resource "profitbricks_k8s_node_pool" "dev_zone_1" {
   datacenter_id     = var.datacenter
   k8s_cluster_id    = profitbricks_k8s_cluster.dev.id
   cpu_family        = "INTEL_XEON"
-  availability_zone = "ZONE_1"
+  availability_zone = "SGP1"
   storage_type      = "HDD"
   node_count        = 2
   cores_count       = 3
@@ -35,7 +35,7 @@ resource "profitbricks_k8s_node_pool" "dev_zone_2" {
   datacenter_id     = var.datacenter
   k8s_cluster_id    = profitbricks_k8s_cluster.dev.id
   cpu_family        = "INTEL_XEON"
-  availability_zone = "ZONE_2"
+  availability_zone = "SGP1"
   storage_type      = "HDD"
   node_count        = 2
   cores_count       = 3
