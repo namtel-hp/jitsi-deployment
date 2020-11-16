@@ -20,7 +20,7 @@ resource "profitbricks_k8s_node_pool" "prod_zone_1" {
   availability_zone = "SGP1"
   storage_type      = "HDD"
   node_count        = 3
-  cores_count       = 10
+  cores_count       = 4
   ram_size          = 8192
   storage_size      = 50
 }
@@ -38,7 +38,7 @@ resource "profitbricks_k8s_node_pool" "prod_zone_2" {
   availability_zone = "FRA1"
   storage_type      = "HDD"
   node_count        = 3
-  cores_count       = 10
+  cores_count       = 4
   ram_size          = 8192
   storage_size      = 50
 }
