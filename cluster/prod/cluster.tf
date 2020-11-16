@@ -8,7 +8,7 @@ resource "profitbricks_k8s_cluster" "prod" {
 }
 
 resource "profitbricks_k8s_node_pool" "prod_zone_1" {
-  name              = "worker-10cpu-8gb"
+  name              = "s-4vcpu-8gb"
   k8s_version       = "1.17.13-do.2"
   maintenance_window {
     day_of_the_week = "Saturday"
@@ -26,7 +26,7 @@ resource "profitbricks_k8s_node_pool" "prod_zone_1" {
 }
 
 resource "profitbricks_k8s_node_pool" "prod_zone_2" {
-  name              = "worker-10cpu-8gb"
+  name              = "s-4vcpu-8gb"
   k8s_version       = "1.17.13-do.2"
   maintenance_window {
     day_of_the_week = "Wednesday"
